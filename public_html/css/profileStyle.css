@@ -1,0 +1,352 @@
+#profile {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    outline: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    width: 1000px;
+    margin: 40px auto;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+::selection {
+    background: #a4dcec;
+}
+
+::-moz-selection {
+    background: #a4dcec;
+}
+
+::-webkit-selection {
+    background: #a4dcec;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #ccc;
+    font-style: italic;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #ccc;
+    font-style: italic;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #ccc;
+    font-style: italic;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #ccc !important;
+    font-style: italic;
+}
+
+br {
+    display: block;
+    line-height: 2.2em;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+    padding-left: 20px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+input, textarea {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+}
+
+#topbar a {
+    color: #fff;
+    font-size: 1.3em;
+    line-height: 1.25em;
+    text-decoration: none;
+    opacity: 0.5;
+    font-weight: bold;
+}
+
+#topbar a:hover {
+    opacity: 1;
+}
+
+/** typography **/
+#h1Profile {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-size: 2.5em;
+    line-height: 1.5em;
+    letter-spacing: -0.05em;
+    margin-bottom: 20px;
+    padding: .1em 0;
+    color: #444;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+}
+
+#h1Profile:before,
+#h1Profile:after {
+    content: "";
+    position: relative;
+    width: 50%;
+    height: 1px;
+    vertical-align: middle;
+    background: #f0f0f0;
+}
+
+#h1Profile:before {
+    left: -.5em;
+    margin: 0 0 0 -50%;
+}
+
+#h1Profile:after {
+    left: .5em;
+    margin: 0 -50% 0 0;
+}
+
+#h1Profile > span {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+}
+
+#profileContent {
+    display: block;
+    font-size: 1.4em;
+    line-height: 1.55em;
+    margin-bottom: 22px;
+    color: #555;
+}
+
+#profileLink {
+    color: #5a9352;
+    text-decoration: none;
+}
+
+#profileLink:hover {
+    text-decoration: underline;
+}
+
+.center {
+    display: block;
+    text-align: center;
+}
+
+#content {
+    display: relative;
+    width: 100%;
+    background: #fff;
+    padding-bottom: 30px;
+    font-family: 'Roboto';
+}
+
+#userphoto {
+    display: block;
+    float: right;
+    margin-left: 10px;
+    margin-right: 50px;
+    margin-bottom: 8px;
+    height: 50px;
+    opacity: 1;
+}
+
+#userphoto img {
+    display: block;
+    padding: 2px;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/** profile nav links **/
+#profiletabs {
+    display: block;
+    margin-bottom: 4px;
+    height: 50px;
+}
+
+#profiletabs ul {
+    list-style: none;
+    display: block;
+    width: 70%;
+    height: 50px;
+    font-family: Roboto;
+}
+
+#profiletabls ul li {
+    float: left;
+}
+
+#profiletabs ul li a {
+    display: block;
+    float: left;
+    padding: 8px 11px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background: #2C3E50;
+    color: white;
+}
+
+#profiletabs ul li a:hover {
+    text-decoration: none;
+    background: #607D8B;
+    color: white;
+}
+
+#profiletabs ul li a.sel {
+    background: #607D8B;
+    border-color: #607D8B;
+    color: white;
+}
+
+/** profile content sections **/
+.hidden {
+    display: none;
+}
+
+.activity {
+    padding-bottom: 4px;
+}
+
+.setting {
+    display: block;
+    font-weight: normal;
+    padding: 7px 3px;
+    border-top: 1px solid #263238;
+    margin-bottom: 5px;
+}
+
+.setting span {
+    float: left;
+    width: 250px;
+    font-weight: bold;
+}
+
+.setting span img {
+    cursor: pointer;
+}
+
+#friendslist {
+    display: block;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#friendslist li {
+    line-height: 30px;
+}
+
+#friendslist li a {
+    float: left;
+    height: 100px;
+    padding: 3px 6px;
+    line-height: 22px;
+    margin-right: 15px;
+    border-top: 1px solid #78909C;
+}
+
+#friendslist li a img {
+    float: left;
+    margin-right: 5px;
+}
+
+/** clearfix **/
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+/* Ripple */
+
+.ripple {
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    position: absolute;
+    opacity: 1;
+}
+
+.rippleEffect {
+    -webkit-animation: rippleDrop .6s linear;
+    animation: rippleDrop .6s linear;
+}
+
+@-webkit-keyframes rippleDrop {
+    100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes rippleDrop {
+    100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,108 @@
+
+.tabMenuWrapper ul{
+	font-size: 0px;
+	position: relative;
+	padding: 0px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin-left:10px;
+}
+
+.tabMenuWrapper ul li{
+	display: inline-block;
+	width: 150px;
+	height: 30px;
+	background: #2C3E50;
+	font-size: 12px;
+	font-family: 'roboto', sans-serif;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.tabMenuWrapper ul li a{
+	display: inline-block;
+	font-size: 16px;
+	font-family: 'roboto', sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	width: inherit;
+	text-decoration: none;
+}
+
+.tabMenuWrapper ul li.slider{
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	height: 4px;
+	background: #DA4453;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+/* Ripple */
+
+.ripple{
+	width: 0px;
+	height: 0px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.4);
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	position: absolute;
+	opacity: 1;
+}
+
+.rippleEffect{
+	-webkit-animation: rippleDrop .6s linear;
+	animation: rippleDrop .6s linear;
+}
+
+@-webkit-keyframes rippleDrop{
+	100%
+	{
+		-webkit-transform: scale(2);
+		transform: scale(2);
+		opacity: 0;
+	}
+}
+
+@keyframes rippleDrop{
+	100%
+	{
+		-webkit-transform: scale(2);
+		transform: scale(2);
+		opacity: 0;
+	}
+}
+
+.tab {
+	display:none;
+}
+
+.tab.active {
+	display:block;
+}
+/* change style of tab content here*/
+.tab-content{
+	overflow: auto;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+	background:white;
+	margin-left:10px;
+	margin-right:10px;
+	padding:10px;
+	border-top:3px solid #2C3E50;
+	margin: 0 auto;
+	height: auto ;
+}

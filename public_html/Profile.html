@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  
+  <link rel="stylesheet" type="text/css" media="all" href="<?php echo FILE_PATH('css) . 'profileStyle.css'; ?>" >
+  
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  
+</head>
+
+<body>
+  <div id = "profile">
+  
+      <div id="w">
+        <div id="content" class="clearfix">
+          <div id="userphoto"><img src="img/Avatar.jpg" alt="default avatar" class="clearfix"></div><br>
+           
+          <h1 id = "h1Profile">User Profile</h1>
+
+      <div class="tabMenuWrapper">
+          <nav id="profiletabs">
+            <ul id = "tabMenu">
+              <li><a id = "profileLink" href="#bio" class="sel">Bio</a></li>
+              <li><a id = "profileLink" href="#activity">Activity</a></li>
+              <li><a id = "profileLink" href="#friends">Friends</a></li>
+              <li><a id = "profileLink" href="#settings">Settings</a></li>
+            </ul>
+          </nav>
+          </div>
+          
+          <section id="bio">
+            <p id = "profileContent">Content 1.</p>
+            
+          </section>
+          
+          <section id="activity" class="hidden">
+            <p id = "profileContent">Most recent actions:</p>
+            
+            <p class="activity">#Content 2</p>
+            
+          </section>
+          
+          <section id="friends" class="hidden">
+            <p id = "profileContent">Friends list:</p>
+            
+            <ul id="friendslist" class="clearfix">
+              <li><a id = "profileLink" href="#"><img src="images/tu.jpg" width="90" height="90"> huynhminhtu</a></li>
+              <li><a id = "profileLink" href="#"><img src="images/chi.jpg" width="90" height="90"> tranchungtinh</a></li>
+            </ul>
+          </section>
+          
+          <section id="settings" class="hidden">
+            <p id = "profileContent">Edit your user settings:</p>
+            
+            <p class="setting"><span>E-mail Address <img src="images/edit.png" alt="*Edit*"></span> lolno@gmail.com</p>
+            
+            <p class="setting"><span>Language <img src="images/edit.png" alt="*Edit*"></span> English(US)</p>
+            
+            <p class="setting"><span>Address <img src="images/edit.png" alt="*Edit*"></span> 1600 Pennsylvania</p>
+            
+            <p class="setting"><span>Phone Number <img src="images/edit.png" alt="*Edit*"></span> 19001080</p>
+            
+            <p class="setting"><span>First Name <img src="images/edit.png" alt="*Edit*"></span> Tung</p>
+                   <p class="setting"><span>Gender <img src="images/edit.png" alt="*Edit*"></span> Unknown</p>
+            
+          </section>
+        </div><!-- @end #content -->
+      </div><!-- @end #w -->
+    </div>
+<script type="text/javascript" src = "js/profileScript.js">
+
+</script>
+</body>

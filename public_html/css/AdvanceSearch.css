@@ -1,0 +1,60 @@
+#advance_search #name{
+    width:500px;
+    height:auto;
+    margin-top:10px;
+    margin-left:10px;
+    margin-bottom:10px;
+}
+
+#advance_search #nameBox{
+    margin-left:10px;
+    width:200px
+}
+
+#advance_search #nameBox:focus{
+    outline:none;
+}
+
+#advance_search #provinceDiv{
+    margin-top:10px;
+    margin-left:10px;
+    margin-bottom:10px;
+    width:300px;
+    height:150px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+}
+
+#advance_search #district{
+    margin-top:10px;
+    margin-left:10px;
+
+}
+
+#advance_search #province{
+    width:150px;
+    height:20px;
+}
+
+#advance_search #province_box{
+   text-align:center;
+    font-weight: bold;
+    margin-top:10px;
+
+
+}
+
+#advance_search #search_button{
+    cursor: pointer;
+    width: 70px;
+    height: 31px;
+    color: white;
+    background: #2C3E50;
+    border: 1px solid #2C3E50;;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    font: 14px/1.4 'Roboto';
+    margin-top:10px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+    margin-left:10px;
+}
+

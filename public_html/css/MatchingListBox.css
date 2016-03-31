@@ -1,0 +1,81 @@
+#matching_list{
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin:0 auto;
+}
+#container{
+    height: 200px;
+    width: 1176px;
+}
+#matching_list_box{
+    width: 300px;
+    height: 265px;
+    box-shadow: 6px 4px 4px 0px rgba(0,0,0,0.26);
+    overflow: hidden;
+    padding: 15px;
+    border: 1px solid #DEDEDE;
+    margin-right:20px;
+    padding-bottom: 0;
+    text-overflow: ellipsis;
+    float: left;
+    margin-top:10px;
+}
+#matching_list_box #avatar{
+    float: left;
+    width: 30%;
+    height: 123px;
+    border: 1px solid #DEDEDE;
+}
+#matching_list_box #restaurant_info{
+    float: right;
+    margin-left: 10px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#matching_list_box h3{
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float:right;
+    width: 150px;
+}
+#matching_list_box h4{
+    font-weight: bold;
+}
+
+#matching_list_box p{
+    margin: 0 0 10px;
+    width: 150px;
+}
+
+#matching_list_box #user_related{
+    margin-top: 140px;
+    font-weight: bold;
+    font-size: 15px;
+}
+#matching_list_box #applyButton {
+    margin-left: -15px;
+    margin-bottom: -0px;
+    margin-top: 10px;
+    width: inherit;
+    text-align: center;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #2C3E50;
+    border: 1px solid #2C3E50;
+}
+.next, .prev{
+    color: #fff;
+    position: absolute;
+    background: rgba(0,0,0, .6);
+    top: 50%;
+    z-index: 1;
+    font-size: 2em;
+    margin-top: -.75em;
+    opacity: .3;
+    user-select: none;
+}

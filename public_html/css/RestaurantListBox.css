@@ -1,0 +1,33 @@
+#restaurant_list_box{
+    width: 300px;
+    height:100px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+    margin-right:20px;
+}
+#restaurant_list_box #avatar{
+    margin-top:5px;
+    float: left;
+    width: 30%;
+
+}
+#restaurant_list_box #restaurant_text{
+    float: left;
+    margin-left: 10px;
+
+}
+#restaurant_list_box #name{
+    font-weight: bold;
+    font-size: 20px;
+}
+#restaurant_list_box #address{
+    font-size: 10px;
+    font-size:15px;
+}
+
+
+#restaurant_list_box #follow{
+    background: #2C3E50;
+    color:white;
+    border: 2px solid #2C3E50;
+}
+

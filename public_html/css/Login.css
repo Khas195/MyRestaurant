@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	font-family:'Roboto';
+}
+#LoginPanel{
+	align : "center";
+	line-height: 1.4;
+	font-size: 12px;
+	font-family: 'Roboto';
+	color:black;
+}
+
+#loginText{
+	font: 70px/1.4 'Roboto';
+	color:#2C3E50;
+}
+
+#email{
+	font-size:15px;
+	font-famlily:'Roboto';
+	align:center;
+	padding:10px;
+	width:200px;
+}
+
+#email [placeholder]{
+	font-size:15px;
+	font-famlily:'Roboto';
+}
+
+#password{
+	font-size:15px;
+	font-famlily:'Roboto';
+	align:center;
+	padding:10px;
+	width:200px;
+}
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+     
+	font-size:15px;
+	font-famlily:'Roboto';
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      
+   opacity:  1;
+   	font-size:15px;
+	font-famlily:'Roboto';
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   
+   opacity:  1;
+  	font-size:15px;
+	font-famlily:'Roboto';
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+     
+   	font-size:15px;
+	font-famlily:'Roboto';
+}
+
+#SubmitButton{
+  padding: 0 18px;
+  height: 40px;
+  width:220px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background: #2C3E50;
+  border: 1px solid #2C3E50;
+}
+
+#SubmitButton:active{
+	background: grey;
+	border: 1px solid grey;
+}
+
+#forgot{
+	font-size:15px;
+	align:center;
+	height: 5px;
+	color:black;
+}
+.Login{
+	position:relative;
+	margin: 40px auto;
+	padding: 20px 20px 20px;
+  	width: 310px;
+  	background:white;
+	color:black;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+}
+
+.errorLogin {
+	position: absolute;
+	margin-top: -17px;
+	font-size: 10px;
+	color: red;
+	font-weight: normal;
+	margin-left: 50px;
+}

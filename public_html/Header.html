@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Restaurants</title>
+
+<body>
+
+<header class="header">
+
+    <div class="header-limiter">
+
+        <!-- Cái này là tên (Logo) -->
+        <h1><a href="http://localhost/MyRestaurant/public_html/MainPage/index">MyRestaurant</a></h1>
+        <!-- Hết tên - logo-->
+
+        <h2 id="searchLink"><a href="http://localhost/MyRestaurant/public_html/SearchPageController/index">SEARCH</a></h2>
+        <?php
+            if (isset($_SESSION[DatabaseDef::ATTRIBUTE_USER_EMAIL]))
+            {
+                ?>
+        <!-- Phần của dropdown user menu -->
+        <div class="header-user-menu">
+            <!--Example of using CONFIG_PATH-->
+            <img src="<?php echo FILE_PATH('image') . 'Bell-icon.png'; ?>" alt="User Image"/>
+
+            <ul>
+
+                <li><a href="?settings">Settings</a></li>
+                <li><a href="?payments">Payments</a></li>
+                <li><a href="?logout" class="highlight">Logout</a></li>
+
+            </ul>
+
+        </div> <!-- Hết User Menu -->
+
+        <!-- Notification Menu -->
+        <div class="header-user-menu">
+
+            <img src="<?php echo FILE_PATH('image') . 'Bell-icon.png'; ?>" alt="Bell Image"/>
+
+            <ul>
+
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Payments</a></li>
+                <li><a href="#" class="highlight">Logout</a></li>
+
+            </ul>
+
+        </div><!-- Hết notification -->
+
+        <!-- Mailbox Menu -->
+        <div class="header-user-menu">
+
+            <img src="<?php echo FILE_PATH('image') . 'Bell-icon.png'; ?>" alt="inbox Image"/>
+
+            <ul>
+
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Payments</a></li>
+                <li><a href="#" class="highlight">Logout</a></li>
+
+            </ul>
+
+        </div><!-- Hết Mailbox Menu-->
+        <?php
+            } else {
+            ?>
+        ​
+        ​
+        <h3 id="loginLink"><a href="http://localhost/MyRestaurant/public_html/Login/index">Login</a></h3>
+        ​
+        <h4 id="signupLink"><a href="http://localhost/MyRestaurant/public_html/SignUp/index">Sign Up</a></h4>
+        <?php
+            }
+        ?>
+
+
+    </div> <!-- End of header-limiter-->
+
+</header> <!-- End of header-user-dropdown-->
+
+<!-- Content of Page go here -->
+
+
+<!-- End of Page Content -->
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+@charset "UTF-8";
+#signup{
+	font:12px/1.4 "Roboto";
+	height:100%;
+	position:relative;
+	margin: 10px auto;
+	padding: 20px 20px 20px;
+  	width: 310px;
+  	background:white;
+	color:black;
+	margin:40px auto;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+}
+
+.username{
+	line-height: 1.4;
+	font-size: 15px;
+	font-family: "Roboto";
+	color: #2C3E50;
+	margin:auto;
+}
+#username{
+	width : 300px;
+	height: 20px;
+	line-height: 1;
+	font-size: 15px;
+	font-family: "Roboto";
+	box-shadow: none;
+	border-bottom: 1px solid rgba(117, 117, 117, 0.15);
+	border-left:none;
+	border-right:none;
+	border-top:none;
+}
+
+#username:focus{
+	outline:none;
+}
+
+.password{
+	font: 15px/1.4 "Roboto";
+	color:#2C3E50;
+	
+}
+#password{
+	width : 300px;
+	height: 20px;
+	font: 15px/1.4 "Roboto";
+	font-weight: normal;
+	border-bottom: 1px solid rgba(117, 117, 117, 0.15);
+	border-left:none;
+	border-right:none;
+	border-top:none;
+}
+
+#password:focus{
+	outline:none;
+}
+
+.birthday{
+	font: 15px/1.4 "Roboto";
+	color:#2C3E50;
+
+}
+.day-month-year{
+	font:12px/1.4 "Roboto";
+	color:#2C3E50;
+}
+
+#year{
+	width: 30px;
+	font-weight: normal;
+}
+
+.Gender{
+	font: 15px/1.4 "Roboto";
+	color:#2C3E50;
+}
+
+.phone{
+	font: 15px/1.4 "Roboto";
+	color:#2C3E50;
+}
+#mobile_phone{
+	width : 300px;
+	height: 20px;
+	font: 15px/1.4 "Roboto";
+	border-bottom: 1px solid rgba(117, 117, 117, 0.15);
+	border-left:none;
+	border-right:none;
+	border-top:none;
+}
+#mobile_phone:focus{
+	outline:none;
+}
+
+.address{
+	font: 15px/1.4 "Roboto";
+	color:#2C3E50;
+}
+#add{
+	width : 300px;
+	height: 20px;
+	font: 15px/1.4 "Roboto";
+	font-weight: normal;
+	border-bottom: 1px solid rgba(117, 117, 117, 0.15);
+	border-left:none;
+	border-right:none;
+	border-top:none;
+}
+#add:focus{
+	outline:none;
+}
+
+
+.email{
+	font: 15px/1.4 "Roboto";
+	color:#2C3E50;
+}
+
+#email{
+	width : 300px;
+	height: 20px;
+	font: 15px/1.4 "Roboto";
+	border-bottom: 1px solid rgba(117, 117, 117, 0.15);
+	border-left:none;
+	border-right:none;
+	border-top:none;
+}
+#email:focus{
+	outline:none;
+}
+
+
+.FirstName{
+	font: 15px/1.4 "Roboto";
+	color:#2C3E50;
+}
+#first_name{
+	width : 300px;
+	height: 20px;
+	font: 15px/1.4 "Roboto";
+	border-bottom: 1px solid rgba(117, 117, 117, 0.15);
+	border-left:none;
+	border-right:none;
+	border-top:none;
+}
+
+#first_name:focus{
+	outline:none;
+}
+
+.MiddleName{
+	font: 15px/1.4 "Roboto";
+	color:#2C3E50;
+}
+#middle_name{
+	width : 300px;
+	height: 20px;
+	font: 15px/1.4 "Roboto";
+	border-bottom: 1px solid rgba(117, 117, 117, 0.15);
+	border-left:none;
+	border-right:none;
+	border-top:none;
+}
+
+#middle_name:focus{
+	outline:none;
+}
+
+.LastName{
+	font: 15px/1.4 "Roboto";
+	color:#2C3E50;
+}
+
+#last_name{
+	width : 300px;
+	height: 20px;
+	font: 15px/1.4 "Roboto";
+	border-bottom: 1px solid rgba(117, 117, 117, 0.15);
+	border-left:none;
+	border-right:none;
+	border-top:none;
+}
+
+#last_name:focus{
+	outline:none;
+}
+
+#submit{
+  padding: 0 5px;
+  height: 30px;
+  width:150px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: #2C3E50;
+  border: 1px solid #2C3E50;
+  font-family:'Roboto';
+	
+}
+
+#submit:active{
+	background: grey;
+	border: 1px solid grey;
+
+}
+
+#reset{
+  padding: 0 5px;
+  height: 30px;
+  width:150px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: #2C3E50;
+  border: 1px solid #2C3E50;
+  font-family:'Roboto';
+}
+
+#reset:active{
+	background: grey;
+	border: 1px solid grey;
+	
+}
+
+#signupText{
+	font: 50px/1.4 'Roboto';
+	color:#2C3E50;
+	text-align: center;
+}
+.errorSignUp{
+	position: absolute;
+	margin-top: -17px;
+	font-size: 10px;
+	color: red;
+	margin-left: 5px;
+	font-weight: normal;
+
+}

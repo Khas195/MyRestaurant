@@ -1,0 +1,11 @@
+.photo {
+    float: left;
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#recruitmentPhoto{
+    width: 700px;
+}

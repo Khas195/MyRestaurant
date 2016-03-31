@@ -1,0 +1,166 @@
+<!doctype html>
+
+<html>
+
+<body>
+<div id="content">
+    <div id="signup">
+        <h1 id="signupText"><strong>Sign Up</strong></h1>
+
+        <form method="POST" action="SignUp/index" onsubmit="return formValidation();" name="SignUp" >
+
+
+            <div class="username">
+                <p>Username: <br>
+                    <input type="text" name="username" id="username" required>
+                </p>
+
+                <p class="errorSignUp" id="usernameError">
+                    <script>document.write(callData('username'));</script>
+                </p>
+            </div>
+
+            <div class="password">
+                <p>Password: <br>
+
+                    <input type="password" name="password" id="password" required>
+                </p>
+
+                <p class="errorSignUp" id="passwordError">
+                    <script>
+                        callData('password');
+                    </script>
+                </p>
+            </div>
+
+            <div class="password">
+                <p>Re-type Password:<br>
+
+                    <input type="password" name="password_confirmation" id="password" required>
+                </p>
+
+                <p class="errorSignUp" id="passwordConfirmError"></p>
+            </div>
+
+            <div class="email">
+                <p>Email Address:<br>
+
+                    <input type="text" name="email" id="email" required>
+                </p>
+
+                <p class="errorSignUp" id="emailError"></p>
+            </div>
+
+            <div class="FirstName">
+                <p>First Name:<br>
+
+                    <input type="text" name="first_name" id="first_name" required>
+                </p>
+            </div>
+
+            <div class="MiddleName">
+                <p>Middle Name:<br>
+
+                    <input type="text" name="middle_name" id="middle_name" required>
+                </p>
+            </div>
+
+            <div class="LastName">
+                <p>Last Name:<br>
+
+                    <input type="text" name="last_name" id="last_name" required>
+                </p>
+            </div>
+
+            <div class="birthday">
+                <p>Date of Birth:
+
+                <div class="day-month-year">
+
+                    Date:
+                    <select name="day" id="day" required>
+                        <script>
+                            for (i = 1; i <= 31; i++) {
+                                document.write('<option value="' + i + '">' + i + '</option>');
+                            }
+                        </script>
+                    </select>
+                    Month:
+                    <select name="month" id="day" required>
+                        <script>
+                            for (i = 1; i <= 12; i++) {
+                                document.write('<option value="' + i + '">' + i + '</option>');
+                            }
+                        </script>
+                    </select>
+
+                    Year:
+                    <select name="year" id="day" required>
+                        <script>
+                            for (i = 1900; i <= 2005; i++) {
+                                document.write('<option value="' + i + '">' + i + '</option>');
+                            }
+                        </script>
+                    </select>
+
+                </div>
+                </p>
+                <p class="errorSignUp" id="birthdayError"></p>
+            </div>
+
+            <div class="Gender">
+                <p>Gender: <br>
+
+                    <select name="gender" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Prefer Not To Say">Prefer Not To Say</option>
+                        <option value="Question">Why are you keep asking me?</option>
+                        <option value="Go Away">Go away</option>
+                        <option value="Again">Seriously, Go Away</option>
+                        <option value="Stop">Stop asking me!</option>
+                    </select>
+
+                </p>
+            </div>
+            <div class="phone">
+                <p>Phone Number:<br>
+                    <input type="text" name="phone" id="mobile_phone" required>
+                </p>
+            </div>
+
+            <div class="address">
+                <p>Address:<br>
+                    <input type="text" name="address" id="add">
+                </p>
+
+                <p>Province:<br>
+
+                    <select name="province" required>
+                        <option value="HCMC">
+                            Ho Chi Minh City
+                        </option>
+                    </select>
+                </p>
+
+                <p>District:<br>
+                    <select name="district" id="day" required>
+                        <script>
+                            for (i = 1; i <= 12; i++) {
+                                document.write('<option value="' + 'district ' + i + '">' + 'District ' + i + '</option>');
+                            }
+                        </script>
+                    </select>
+                </p>
+            </div>
+            <p>
+                <input type="submit" value="Submit" id="submit">
+                <input type="reset" value="Reset" id="reset">
+            </p>
+        </form>
+    </div>
+
+</div>
+<!-- End of Page Content -->
+</body>
+</html>

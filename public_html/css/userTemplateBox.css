@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* CSS Document */
+#userTemplateBox{
+	float: left;
+	width: 400px;
+	height: 200px;
+	font-family: 'Roboto';
+	margin-left: 14px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+}
+
+#userTemplateBox #avatar{
+	float: left;
+	margin-left: 12px;
+	margin-top: 13px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+}
+
+#userTemplateBox #boxContent{
+	float: left;
+	padding-left: 21px;
+	margin-top: -2px;
+}
+
+#userTemplateBox #apply{
+	height: 30px;
+	width: 100px;
+	font-size: 15px;
+	color: white;
+	background: #2C3E50;
+	border: 1px solid #2C3E50;
+	font-family: 'Roboto';
+	transition: 300ms ease-in-out;
+	box-shadow: 0px 4px 20px #ccc;
+	margin-left: 97px;
+}
+
+#userTemplateBox #apply:active{
+	background: red;
+	border: 1px solid red;
+}
+#userTemplateBox #apply:hover{
+	transform: translateY(-3px);
+	box-shadow: 0px 2px 20px #777;
+}
+
+#userTemplateBox #name{
+}
+
+#userTemplateBox #province{
+}
+
+#userTemplateBox #like{
+}

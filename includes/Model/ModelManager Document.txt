@@ -1,0 +1,159 @@
+-INITIAL {
+	@Key: DatabaseDef::NAME_STATE
+	#Val: 
+		-STATE_LOGIN {
+			* Input:
+				@Key: DatabaseDef::ATTRIBUTE_USER_EMAIL
+				#Val: String
+
+				@Key: DatabaseDef::ATTRIBUTE_USER_PASSWORD
+				#Val: String
+
+			* Output:
+				@Key: DatabaseDef::RESULT
+				#Val: boolean
+		}		 		
+
+		-STATE_SEARCH {
+			* Input:
+				@Key: DatabaseDef::KEY_TARGET
+				#Val: 
+					-DatabaseDef::TAR_USERS, DatabaseDef::TAR_RESTAURANT {
+
+						@Key: DatabaseDef::KEY_CONTENT
+						#Val: String
+
+						@Key: DatabaseDef::KEY_CONSTRAINT
+						#Val: array("$ConstraintName_1" => array('value_1',..,'value_m'),
+									...,
+									"$ConstraintName_N"	=> array('value_1',..,'value_l'))
+
+						* Output:
+							@Key: DatabaseDef::RESULT
+							#Val: 
+								-Package with key = DatabaseDef::ATTRIBUTE_USER_USERID  (for TAR_USERS)
+									includes {
+										all attributes of table User 
+									}
+								-Package with key = DatabaseDef::ATTRIBUTE_RESTAURANT_RID  (for TAR_RESTAURANT)
+									includes {
+										all attributes of table Restaurant 
+									}
+					}
+
+					-DatabaseDef::TAR_RECRUITMENT {
+
+						@Key: DatabaseDef::KEY_CONTENT
+						#Val: String
+
+						@Key: DatabaseDef::KEY_CONSTRAINT
+						#Val: array("$ConstraintName_1" => array('value_1',..,'value_m'),
+									...,
+									"$ConstraintName_N"	=> array('value_1',..,'value_l'),
+									...,
+									"DatabaseDef::ATTRIBUTE_USER_USERID" => String )
+
+						* Output:
+							@Key: DatabaseDef::RESULT
+							#Val: 
+								-Package with key = DatabaseDef::ATTRIBUTE_RECRUITMENT_ID 
+									includes {
+										'RPID': int
+										'Job': String
+										'Province': String
+										'District': int
+										'MatchedPercentage': float (from 0 to 1)
+									}
+					}
+		}
+
+
+		-STATE_MAIN_PAGE {
+			* Input: 
+				@Key: DatabaseDef::DEFINITION_STATE
+				#Val: 
+					-StateMainPage::DEF_GET_MATCHING_LIST {
+						@Key: DatabaseDef::ATTRIBUTE_USER_USERID
+						#Val: String ////////////////////////////////////
+
+						* Output:
+							@Key: DatabaseDef::RESULT
+							#Val: 
+								-Package with key = DatabaseDef::ATTRIBUTE_RECRUITMENT_ID 
+									includes {
+										'RPID': int
+										'Job': String
+										'Province': String
+										'District': int
+										'MatchedPercentage': float (from 0 to 1)
+									}
+					}
+
+					-StateMainPage::DEF_GET_SINGLE_MATCHED {
+						@Key: DatabaseDef::ATTRIBUTE_USER_USERID
+						#Val: String
+
+						@Key: DatabaseDef::ATTRIBUTE_RECRUITMENT_RPID
+						#Val: int	
+
+						* Output:
+							@Key: DatabaseDef::RESULT
+							#Val: float (from 0 to 1)			
+					}
+
+					-StateMainPage::DEF_GET_RECENT_ACTIVITY {
+						@Key: DatabaseDef::MAX_NUMBER_RESULTS
+						#Val: int 
+
+						@Key: DatabaseDef::KEY_TARGET
+						#Val: 
+							-DatabaseDef::TAR_USERS {
+								* Output:
+									@Key: DatabaseDef::RESULT
+									#Val: 
+										-Package with key = DatabaseDef::ATTRIBUTE_USER_USERID  (for TAR_USERS)
+											inncludes {
+												all attributes of table User 
+											}
+							}
+
+							-DatabaseDef::TAR_RESTAURANT {
+								* Output:
+									@Key: DatabaseDef::RESULT
+									#Val: 
+										-Package with key = DatabaseDef::ATTRIBUTE_RESTAURANT_RID  (for TAR_RESTAURANT)
+											includes {
+												all attributes of table Restaurant 
+											}
+							}
+
+							-DatabaseDef::TAR_RECRUITMENT {
+								@Key: DatabaseDef::ATTRIBUTE_USER_USERID
+								#Val: string
+								* Output:
+									@Key: DatabaseDef::RESULT
+									#Val:
+										-Package with key = DatabaseDef::ATTRIBUTE_RECRUITMENT_ID 
+											includes {
+												'DateCreated': date
+												'RPID': int
+												'Job': String
+												'Province': String
+												'District': int
+												'MatchedPercentage': float (from 0 to 1)
+											}
+							}
+					}
+
+			 
+
+		}
+
+		-STATE_SIGNUP {
+			
+		}
+}
+
+
+
+

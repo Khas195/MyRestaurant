@@ -1,0 +1,17 @@
+.errorSignUp{
+	position: absolute; 
+	margin-top: -17px; 
+	font-size: 10px;
+	color: red;
+	margin-left: 5px;
+	font-weight: normal;
+	
+}
+.errorLogin{
+	position: absolute;
+	margin-top: -17px;
+	font-size: 10px;
+	color: red;
+	font-weight: normal;
+	margin-left: 50px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<!-- Content of Page go here -->
+
+<div id="content">
+
+
+    <div class="Login">
+        <h1 id="loginText" align="center"><strong>Login</strong></h1>
+
+        <div id="LoginPanel" align="center">
+            <form class="" method="POST" name="" action="http://localhost/MyRestaurant/public_html/Login/index">
+                <p class="errorLogin">
+                    <?php
+                        if ($this->data != ''){
+                    echo $this->data;
+                    }
+                    ?>
+                </p>
+
+                <p><input type="text" name="email" placeholder="Email" id="email" required="require"></p>
+
+                <p><input type="password" name="password" placeholder="Password" id="password"></p>
+
+                <p><input type="checkbox" name="remember_me" id="remember_me">
+                    Remember me on this computer </p>
+
+                <p><input type="submit" name="LoginButton" value="LOG IN" id="SubmitButton">
+                </p>
+
+
+                <p onClick="alert('No one has been able to register yet!!');" href="" id="forgot">Forgot your password
+                    ?</p>
+
+
+            </form>
+
+        </div>
+    </div>
+    <br>
+
+
+</div>
+<br>
+<!-- End of Page Content -->
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script src="js/header-dropdown.js"></script>
+
+
+</body>
+</html>
